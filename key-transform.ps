@@ -1,0 +1,39 @@
+# Define paths to the JSON file and the key-value file
+$jsonFilePath = "C:\path\to\config.json"
+$keyValueFilePath = "C:\path\to\keyValue.txt"
+
+# Read the content of the JSON file
+$jsonContent = Get-Content $jsonFilePath -Raw
+
+# Read the key-value pairs file
+$keyValuePairs = Get-Content $keyValueFilePath
+
+# Create a hashtable to store key-value pairs
+$replacementDict = @{}
+
+# Populate the hashtable with key-value pairs
+foreach ($line in $keyValuePairs) {
+    # Split the line into key and value parts
+    $key, $value = $line -split "="
+    # Remove any leading or trailing spaces
+    $key = $key.Trim()
+    $value = $value.Trim()
+
+    # Store in hashtable
+    $replacementDict[$key] = $value
+}
+
+# Replace placeholders in JSON content with values from the hashtable
+foreach ($key in $replacementDict.Keys) {
+    # Create the placeholder format <<key>>
+    $placeholder = "<<$key>>"
+    
+    # Replace the placeholder in the JSON content
+    $jsonContent = $jsonContent -replace [regex]::Escape($placeholder), $replacementDict[$key]
+}
+
+# Write the updated content back to the JSON file (or to a new file)
+$outputFilePath = "C:\path\to\updated_config.json"
+Set-Content -Path $outputFilePath -Value $jsonContent
+
+Write-Host "JSON file updated and saved to $outputFilePath"
