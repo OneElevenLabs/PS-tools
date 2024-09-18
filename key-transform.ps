@@ -25,8 +25,8 @@ foreach ($line in $keyValuePairs) {
 
 # Replace placeholders in JSON content with values from the hashtable
 foreach ($key in $replacementDict.Keys) {
-    # Create the placeholder format <<key>>
-    $placeholder = "<<$key>>"
+    # Create the new placeholder format {{key}}
+    $placeholder = "{{" + $key + "}}"
     
     # Replace the placeholder in the JSON content
     $jsonContent = $jsonContent -replace [regex]::Escape($placeholder), $replacementDict[$key]
