@@ -1,0 +1,50 @@
+<YearEndEvaluation>
+    <Employee>
+        <Name>John Doe</Name>
+        <Position>Senior Analyst</Position>
+    </Employee>
+
+    <PerformancePillars>
+        <!-- Leadership Pillar with Description and Manager's Rating -->
+        <Pillar name="Leadership">
+            <Description>Leadership involves the ability to inspire and guide individuals or teams to achieve organizational goals. This includes mentoring, decision-making, and demonstrating accountability in leadership roles.</Description>
+            <Goals>
+                <Goal id="1">Improve leadership skills by mentoring junior analysts.</Goal>
+                <Goal id="2">Lead a cross-departmental project by Q2.</Goal>
+            </Goals>
+            <ManagerFeedback>
+                <MidYear>John successfully mentored two junior analysts, but more work is needed in leading projects.</MidYear>
+                <YearEnd importance="high">John has shown significant improvement in leadership through his role in the Q2 project.</YearEnd>
+                <Rating>4/5</Rating> <!-- Manager's End-of-Year Rating -->
+            </ManagerFeedback>
+            <PeerFeedback>
+                <Feedback>John demonstrated great leadership when guiding the team during difficult projects.</Feedback>
+            </PeerFeedback>
+        </Pillar>
+
+        <!-- Other pillars (Risk and Controls, Financial Performance, Client and Franchise Outcomes) can be structured similarly with descriptions -->
+        
+        <Pillar name="Risk and Controls">
+            <Description>Risk and Controls encompasses managing regulatory compliance, identifying risks, and ensuring internal controls are in place to meet organizational standards.</Description>
+            <Goals>
+                <Goal id="1">Ensure 100% compliance with new regulatory controls.</Goal>
+                <Goal id="2">Implement an internal control review process by mid-year.</Goal>
+            </Goals>
+            <ManagerFeedback>
+                <MidYear>John has been diligent with compliance, but the control review process was delayed.</MidYear>
+                <YearEnd>John ensured compliance but the control review process is still in progress.</YearEnd>
+                <Rating>3/5</Rating> <!-- Manager's End-of-Year Rating -->
+            </ManagerFeedback>
+            <PeerFeedback>
+                <Feedback>John is very detailed in ensuring all compliance measures are met.</Feedback>
+            </PeerFeedback>
+        </Pillar>
+
+        <!-- Continue for other pillars like Financial Performance and Client and Franchise Outcomes -->
+    </PerformancePillars>
+
+    <GeneralPeerFeedback>
+        <Feedback>John is always reliable and works well under pressure.</Feedback>
+        <Feedback>He takes on extra tasks when others are struggling.</Feedback>
+    </GeneralPeerFeedback>
+</YearEndEvaluation>
