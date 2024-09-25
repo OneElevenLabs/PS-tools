@@ -1,0 +1,13 @@
+Generate a year-end evaluation summary for the employee based on the following XML data. Structure the feedback by performance pillar. For each performance pillar:
+
+1. Begin with the pillar description to provide context.
+2. Compare the employee’s goals with examples from the manager's mid-year and year-end reviews, giving **greater weight to the year-end feedback** where available.
+3. Include the manager's **end-of-year rating** and explain how the rating correlates with the feedback provided.
+4. Pull relevant peer feedback and categorize it by performance pillar.
+5. Highlight any specific examples where the manager’s feedback aligns with the employee's goals, prioritizing the year-end feedback.
+6. Organize any unstructured peer feedback by performance pillar.
+7. Emphasize key behaviors, achievements, or qualitative data points for each pillar, using year-end feedback as the primary source of assessment.
+
+If the year-end feedback contradicts the mid-year review, prefer the year-end feedback as the more recent and relevant performance indicator.
+
+[Insert XML Here]
